@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Introdução ao HTML</title>
+  </head>
+  <body>
+    <h1 font="Arial">Introdução ao HTML</h1>
+
+    <hr />
+
+    <h2 id="indice">Índice</h2>
+
+    <ul>
+      <li><a href="#historia-da-web">História da Web</a></li>
+      <li><a href="#clients">O que são Clients</a></li>
+      <li><a href="#servers">O que são Servers</a></li>
+      <li>
+        <a href="#programacao">Linguagens de Programação</a>
+        <ul>
+          <li>Linguagens de Programação mais utilizadas</li>
+        </ul>
+      </li>
+      <li><a href="#estrutura">Estrutura Básica do HTML</a></li>
+      <li>
+        <a href="#listas">Listas</a>
+        <ul>
+          <li>Ordenadas</li>
+          <li>Não Ordenadas</li>
+        </ul>
+      </li>
+      <li><a href="#links">Links</a></li>
+    </ul>
+    <hr />
+    <h2 id="historia-da-web">História da Web</h2>
+    <a href="#indice"> <small>voltar para o índice</small> </a>
+    <font face="Georgia">
+      <p>
+        A história da internet começa no ambiente da Guerra Fria (1945-1991)
+        onde as duas super potências envolvidas,
+        <abbr title="Estados Unidos da América">EUA</abbr> e União Soviética
+      </p>
+
+      <p>
+        Com o intuito de facilitar a troca de informações, porque temiam ataques
+        dos soviéticos, o Departamento de Defesa dos Estados Unidos (ARPA -
+        <u>Advanced Research Projects Agency</u>) criou um sistema de
+        compartilhamento de informações entre pessoas distantes geograficamente,
+        a fim de facilitar as estratégias de guerra.
+      </p>
+      <p>
+        Já na década de 90, o cientista, físico e professor britânico Tim
+        Berners-Lee desenvolveu um navegador ou browser, a
+        <mark>World Wide Web</mark> (www), a Rede Mundial de Computadores -
+        Internet.
+      </p>
+      <p>
+        A partir disso, a década de 90 ficou conhecida como o "boom da
+        internet", pois foi quando ela se popularizou pelo mundo, com o
+        surgimento de novos browsers ou navegadores — Internet Explorer,
+        Netscape, Mozilla Firefox, Google Chrome, Opera, Lynx — e o aumento do
+        número de usuários, navegadores da internet.
+      </p>
+    </font>
+    <hr />
+    <h2 id="clients">O que são Clients</h2>
+    <a href="#indice"> <small>voltar para o índice</small> </a>
+    <p>É o cliente quem sempre inicia a comunicação com o servidor.</p>
+    <p>O cliente mais conhecido é o navegador.</p>
+    <p>
+      Quando acessamos um site pelo navegador, uma requisição é disparada pela
+      internet para o computador no qual esse site está hospedado.
+    </p>
+    <p>
+      Chamamos as aplicações que agem em nome do usuário, assim como o
+      navegador, de <i>user-agent</i>
+    </p>
+    <p>
+      Após enviar uma requisição, o <i>user-agent</i> aguarda até que haja uma
+      resposta do servidor e então a comunicação se encerra.
+    </p>
+    <p>
+      Para obter um novo recurso do servidor o cliente deve iniciar uma nova
+      requisição.
+    </p>
+
+    <hr />
+    <h2 id="servers">O que são Servers</h2>
+    <a href="#indice"> <small>voltar para o índice</small> </a>
+    <p>
+      A função do servidor web é receber uma solicitação (requisição) e devolver
+      (resposta) algo para o cliente. O browser permite ao usuário solicitar um
+      recurso e quando o servidor responde a uma solicitação são encontrados
+      recursos como: páginas HTML, figuras e documento PDF que são exibidas
+      depois para o usuário. Geralmente os servidores enviam instruções para o
+      browser escritas em HTML. O HTML diz ao browser como apresentar conteúdo
+      ao usuário web.
+    </p>
+    <p>
+      O servidor em si tem alguns recursos, mas por algumas deficiências não
+      consegue processar tudo sozinho como: criações de páginas dinâmicas e o
+      armazenamento de dados em um banco de dados.
+    </p>
+
+    <hr />
+    <h2 id="programacao">Linguagens de Programação</h2>
+    <a href="#indice"> <small>voltar para o índice</small> </a>
+    <p>
+      As linguagens de programação podem ser interpretadas como conhecimentos
+      escritos (códigos) que seguem um conjunto de instruções, visando ao
+      desenvolvimento de softwares.
+    </p>
+    <p>
+      Os softwares desenvolvidos a partir da programação podem ser para
+      utilização em computadores, celulares etc.
+    </p>
+    <p>
+      Em outras palavras: o ato de compreender as linguagens de programação e
+      programar diz respeito a um <strong>tipo de escrita</strong> que será
+      transformado em um <strong>programa</strong> (software).
+    </p>
+    <h3>Linguagens de Programação mais utilizadas</h3>
+    <ul>
+      <li>JavaScript;</li>
+      <li>Python</li>
+      <li>PHP</li>
+      <li>Java</li>
+      <li><del>C#</del></li>
+    </ul>
+
+    <hr />
+    <h2 id="estrutura">Estrutura Básica do HTML</h2>
+    <a href="#indice"> <small>voltar para o índice</small> </a>
+    <p>
+      Um documento HTML válido precisa seguir obrigatoriamente a estrutura
+      composta pelas tags &lt; html>, &lt; head> e &lt; body> e a instrução
+      &lt;!DOCTYPE >.
+    </p>
+    <p>
+      Esta estrutura está informada em uma documentação que descreve todos os
+      detalhes do HTML, no caso as tags e atributos, e como os navegadores devem
+      considerar e interpretar estas tags, esta documentação é chamada de
+      "especificação do HTML", e através do que está declarado nela que é
+      possível entender se um documento HTML válido.
+    </p>
+
+    <p>
+      Podemos configurar qual codificação queremos utilizar em nosso documento
+      por meio da configuração de charset na tag &lt; meta>. Um dos valores mais
+      comuns usados hoje em dia é o UTF-8 <sup>:)</sup>, também chamado de
+      Unicode. Há outras possibilidades, como o latin1 <sub>:(</sub> , muito
+      usado antigamente.
+    </p>
+
+    <hr />
+    <h2 id="listas">Listas</h2>
+    <a href="#indice"> <small>voltar para o índice</small> </a>
+    <p>
+      O HTML tem algumas tags definidas para que possamos fazer listagens de
+      maneira correta.
+    </p>
+
+    <h3>Listas Ordenadas</h3>
+    <p>
+      As listas ordenadas &lt;ol> (ordered list) também podem ter sua estrutura
+      composta por outras listas ordenadas como no exemplo que temos para as
+      listas não-ordenadas. Também é possível ter listas ordenadas aninhadas em
+      um item de uma lista não-ordenada e vice-versa.
+    </p>
+
+    <h3>Listas não Ordenadas</h3>
+    <p>
+      A lista mais comum é a lista não-ordenada definida pela tag &lt;ul>
+      (unordered list).
+    </p>
+    <p></p>
+
+    <hr />
+    <h2 id="links">Links</h2>
+    <a href="#indice"> <small>voltar para o índice</small> </a>
+    <p>Links úteis para consulta:</p>
+    <ul>
+      <li>
+        <a
+          href="https://www.todamateria.com.br/historia-da-internet/ "
+          target="_blank"
+          >História da Internet</a
+        >
+      </li>
+      <li><a href="https://www.w3c.br/" target="_blank">W3C</a></li>
+      <li>
+        <a href="https://mateam.net/html-escape-characters/" target="_blank"
+          >HTML Escape Characters</a
+        >
+      </li>
+      <li><a href="http://dio.me" target="_blank"> DIO</a></li>
+    </ul>
+  </body>
+</html>
